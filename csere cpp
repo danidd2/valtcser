@@ -1,0 +1,36 @@
+#include <iostream>
+
+int main(){
+
+	int a = 5;
+	int b = 6;
+
+	std::cout << "Value of a: " << a << ", value of b: " << b << std::endl;
+
+	a -= b;
+	b += a;
+	a = b - a;
+
+	std::cout << "Value of a: " << a << ", value of b: " << b << std::endl;
+
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b;
+
+	std::cout << "Value of a: " << a << ", value of b: " << b << std::endl;
+
+	a = a xor b;
+	b = a xor b;
+	a = a xor b;
+
+	std::cout << "Value of a: " << a << ", value of b: " << b << std::endl;
+
+    a = b * a;
+    b = a / b;
+    a = a / b;
+
+	std::cout << "Value of a: " << a << ", value of b: " << b << std::endl;
+
+
+	return 0;
+}
